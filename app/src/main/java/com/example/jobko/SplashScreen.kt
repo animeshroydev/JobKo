@@ -28,11 +28,13 @@ class SplashScreen : AppCompatActivity() {
             insets
         }
 
-
         Handler(Looper.getMainLooper()).postDelayed({
-
-            val intent = Intent(this, MainActivity::class.java)
-
+            val prefs = getSharedPreferences("app", MODE_PRIVATE)
+            val intent = if (!prefs.getBoolean("seen_onboarding", false)) {
+                Intent(this, OnboardingActivity::class.java)
+            } else {
+                Intent(this, MainActivity::class.java)
+            }
             startActivity(intent)
             finish()
         }, 2000)
@@ -40,11 +42,12 @@ class SplashScreen : AppCompatActivity() {
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-
-        if (hasFocus) {
-            loader.resumeAnimation()
-        } else {
-            loader.pauseAnimation()
+        if (::loader.isInitialized) {
+            if (hasFocus) {
+                loader.resumeAnimation()
+            } else {
+                loader.pauseAnimation()
+            }
         }
     }
 }
