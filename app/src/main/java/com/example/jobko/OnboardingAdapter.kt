@@ -11,9 +11,9 @@ class OnboardingAdapter(activity: FragmentActivity)
 
     override fun createFragment(position: Int): Fragment {
         return when(position) {
-            0 -> OnboardingFragment(R.drawable.logo, "Welcome", "Discover features")
-            1 -> OnboardingFragment(R.drawable.logo, "Fast", "Super fast performance")
-            else -> OnboardingFragment(R.drawable.logo, "Secure", "Your data is safe")
+            0 -> OnboardingFragment(R.drawable.onboard_one, "Search Job Easier \nand More Effective.", "Make your experiece of searching job \nmore easier and effective.")
+            1 -> OnboardingFragment(R.drawable.onboard_two, "Apply for job anywhere & anytime.", "Jobfil Makes You Apply For Job From Anywhere and Anytime.")
+            else -> OnboardingFragment(R.drawable.onboard_three, "Help Find Right Job With Your Desire.", "Jobfil Can Help You Find Job With Your Desire.")
         }
     }
 }

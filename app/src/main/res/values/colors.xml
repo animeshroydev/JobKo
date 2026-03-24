@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splash_bg">#7c65fc</color>
+    <color name="blue_primary">#2969fb</color>
 </resources>

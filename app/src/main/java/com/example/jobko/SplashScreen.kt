@@ -30,7 +30,7 @@ class SplashScreen : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             val prefs = getSharedPreferences("app", MODE_PRIVATE)
-            val intent = if (!prefs.getBoolean("seen_onboarding", false)) {
+            val intent = if (prefs.getBoolean("seen_onboarding", true)) {
                 Intent(this, OnboardingActivity::class.java)
             } else {
                 Intent(this, MainActivity::class.java)
