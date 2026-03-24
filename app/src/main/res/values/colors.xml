@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="splash_bg">#7c65fc</color>
     <color name="blue_primary">#2969fb</color>
+    <color name="text_color_primary">#000000</color>
+    <color name="onBoardingBg">#ffffff</color>
 </resources>

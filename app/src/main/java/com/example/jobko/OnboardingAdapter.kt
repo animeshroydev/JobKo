@@ -11,9 +11,9 @@ class OnboardingAdapter(activity: FragmentActivity)
 
     override fun createFragment(position: Int): Fragment {
         return when(position) {
-            0 -> OnboardingFragment(R.drawable.onboard_one, "Search Job Easier \nand More Effective.", "Make your experiece of searching job \nmore easier and effective.")
-            1 -> OnboardingFragment(R.drawable.onboard_two, "Apply for job anywhere & anytime.", "Jobfil Makes You Apply For Job From Anywhere and Anytime.")
-            else -> OnboardingFragment(R.drawable.onboard_three, "Help Find Right Job With Your Desire.", "Jobfil Can Help You Find Job With Your Desire.")
+            0 -> OnboardingFragment.newInstance(R.drawable.onboard_one, "Search Job Easier \nand More Effective.", "Make your experiece of searching job \nmore easier and effective.")
+            1 -> OnboardingFragment.newInstance(R.drawable.onboard_two, "Apply for job anywhere & anytime.", "Jobfil Makes You Apply For Job From Anywhere and Anytime.")
+            else -> OnboardingFragment.newInstance(R.drawable.onboard_three, "Help Find Right Job With Your Desire.", "Jobfil Can Help You Find Job With Your Desire.")
         }
     }
 }
