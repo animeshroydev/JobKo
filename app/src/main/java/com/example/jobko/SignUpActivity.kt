@@ -1,5 +1,6 @@
 package com.example.jobko
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Spannable
@@ -14,8 +15,21 @@ import androidx.core.view.WindowInsetsCompat
 class SignUpActivity : AppCompatActivity() {
 
     lateinit var fullName: TextView
-    val text = "Full Name *"
-    val spannable = SpannableString(text)
+    lateinit var txtEmail: TextView
+    lateinit var txtPassword: TextView
+    lateinit var CnfmPassword: TextView
+    val textFullName = "Full Name *"
+    val textEmail = "Email *"
+    val textPassword = "Password *"
+    val cnfmTextPassword = "Confirm Password *"
+    val spannableFullName = SpannableString(textFullName)
+    val spannableEmail = SpannableString(textEmail)
+
+    val spannablePassword = SpannableString(textPassword)
+    val spannableCnfmPassword = SpannableString(cnfmTextPassword)
+
+    lateinit var txtSignIn: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,16 +40,59 @@ class SignUpActivity : AppCompatActivity() {
             insets
         }
 
-        fullName = findViewById(R.id.txtFullName)
+        txtSignIn = findViewById(R.id.txtSignIn)
 
-        spannable.setSpan(
+        addMandatoryAsteriskTextEnd()
+
+        txtSignIn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
+    private fun addMandatoryAsteriskTextEnd() {
+        fullName = findViewById(R.id.txtFullName)
+        txtEmail = findViewById(R.id.txtEmail)
+        txtPassword = findViewById(R.id.txtPassword)
+        CnfmPassword = findViewById(R.id.CnfmTxtPassword)
+
+
+
+        spannableFullName.setSpan(
             ForegroundColorSpan(Color.RED),
-            text.length - 1,
-            text.length,
+            textFullName.length - 1,
+            textFullName.length,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
 
-        fullName.text = spannable
+        fullName.text = spannableFullName
 
+        spannableEmail.setSpan(
+            ForegroundColorSpan(Color.RED),
+            textEmail.length - 1,
+            textEmail.length,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        txtEmail.text = spannableEmail
+
+        spannablePassword.setSpan(
+            ForegroundColorSpan(Color.RED),
+            textPassword.length - 1,
+            textPassword.length,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        txtPassword.text = spannablePassword
+
+        spannableCnfmPassword.setSpan(
+            ForegroundColorSpan(Color.RED),
+            cnfmTextPassword.length - 1,
+            cnfmTextPassword.length,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        CnfmPassword.text = spannableCnfmPassword
     }
 }

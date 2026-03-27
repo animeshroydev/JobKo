@@ -3,5 +3,5 @@
         android:width="25dp"
         android:height="25dp"
         android:top="3dp"
-        android:drawable="@drawable/sms"/>
+        android:drawable="@drawable/fullname_icon"/>
 </layer-list>
