@@ -6,4 +6,6 @@
     <color name="blue_primary">#2969fb</color>
     <color name="text_color_primary">#000000</color>
     <color name="onBoardingBg">#ffffff</color>
+    <color name="sign_in_bg">#ffffff</color>
+    <color name="drawable_edit_txt_tint">#808080</color>
 </resources>

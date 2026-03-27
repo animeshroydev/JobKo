@@ -7,6 +7,7 @@ import android.os.Looper
 import android.text.InputType
 import android.view.MotionEvent
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,7 @@ import com.airbnb.lottie.LottieAnimationView
 class MainActivity : AppCompatActivity() {
 
     lateinit var edtPassword: EditText
+    lateinit var txtSignUp: TextView
     private var isPasswordVisible = false
 
 
@@ -27,6 +29,12 @@ class MainActivity : AppCompatActivity() {
 
 
         edtPassword = findViewById(R.id.eyeSlashUnfocused)
+        txtSignUp = findViewById(R.id.txtSignUp)
+        txtSignUp.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
         passwordToggle()
