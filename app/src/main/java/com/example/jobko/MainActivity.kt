@@ -2,18 +2,14 @@ package com.example.jobko
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.text.InputType
 import android.view.MotionEvent
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.airbnb.lottie.LottieAnimationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        edtPassword = findViewById(R.id.eyeSlashUnfocused)
+        edtPassword = findViewById(R.id.editPassword1)
         txtSignUp = findViewById(R.id.txtSignUp)
         txtSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
