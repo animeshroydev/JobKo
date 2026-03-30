@@ -10,7 +10,7 @@ import com.example.jobko.R
 
 class ResetEmailPasswordFragment : Fragment() {
 
-    lateinit var btnSignIn: Button
+    lateinit var btnSend: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -28,8 +28,8 @@ class ResetEmailPasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnSignIn = view.findViewById(R.id.btnSignIn)
-        btnSignIn.setOnClickListener {
+        btnSend = view.findViewById(R.id.btnSend)
+        btnSend.setOnClickListener {
 
             val fragment = VerificationPinFragment()
 

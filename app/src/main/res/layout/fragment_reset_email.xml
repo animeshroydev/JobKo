@@ -82,11 +82,11 @@
         android:padding="12dp" />
 
     <Button
-        android:id="@+id/btnSignIn"
+        android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:backgroundTint="#2969fb"
-        android:text="@string/sign_in_btn_txt"
+        android:text="Send"
         android:textColor="@android:color/white"
         app:cornerRadius="15dp"
         android:layout_marginTop="20dp"
