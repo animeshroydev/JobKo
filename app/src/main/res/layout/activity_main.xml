@@ -237,26 +237,26 @@
 
 
     <TextView
-        android:id="@+id/alreadyHvAccount"
+        android:id="@+id/getCodeIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/don_t_have_an_account"
         android:textAlignment="textEnd"
-        app:layout_constraintEnd_toStartOf="@+id/txtSignUp"
+        app:layout_constraintEnd_toStartOf="@+id/txtResend"
         android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@+id/facebook"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txtSignUp"
+        android:id="@+id/txtResend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:textColor="@color/blue_primary"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="6dp"
-        app:layout_constraintTop_toTopOf="@+id/alreadyHvAccount"
-        app:layout_constraintStart_toEndOf="@+id/alreadyHvAccount"/>
+        app:layout_constraintTop_toTopOf="@+id/getCodeIn"
+        app:layout_constraintStart_toEndOf="@+id/getCodeIn"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

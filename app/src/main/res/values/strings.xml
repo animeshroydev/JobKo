@@ -24,4 +24,14 @@
     <string name="sign_up3">Sign Up</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="sign_in2">Sign In</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="enter_pin_last">Enter PIN Last</string>
+    <string name="reset_now">Reset Now</string>
+    <string name="resend">Resend</string>
+    <string name="get_code_in_0_57">Get Code In 0:57</string>
+    <string name="enter_pin2">Enter PIN</string>
+    <string name="enter_pin4">Enter PIN</string>
+    <string name="johnthansmith_gmail_com">johnthansmith@gmail.com</string>
+    <string name="we_ve_send_you_the_verification_code_on">We\'ve send you the verification code on</string>
+    <string name="verification">Verification</string>
 </resources>

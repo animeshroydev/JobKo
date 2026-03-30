@@ -6,7 +6,6 @@ import android.text.InputType
 import android.view.MotionEvent
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         forgotPassWord = findViewById(R.id.forgotPassword)
 
-        txtSignUp = findViewById(R.id.txtSignUp)
+        txtSignUp = findViewById(R.id.txtResend)
         txtSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
