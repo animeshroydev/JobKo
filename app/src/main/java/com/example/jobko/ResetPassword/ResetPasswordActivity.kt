@@ -1,11 +1,11 @@
-package com.example.jobko
+package com.example.jobko.ResetPassword
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.jobko.ResetPassword.ResetEmailPasswordFragment
+import com.example.jobko.R
 
 class ResetPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

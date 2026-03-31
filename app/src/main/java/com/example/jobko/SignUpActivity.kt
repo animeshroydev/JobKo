@@ -8,17 +8,22 @@ import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.view.MotionEvent
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.jobko.SetupProfile.SetupProfileActivity
+import kotlin.jvm.java
 
 class SignUpActivity : AppCompatActivity() {
 
     lateinit var edtPassword: EditText
     lateinit var confirmPassword: EditText
+
+    lateinit var btnSignUp: Button
     private var isPasswordVisible1 = false
     private var isPasswordVisible2 = false
     lateinit var fullName: TextView
@@ -50,6 +55,7 @@ class SignUpActivity : AppCompatActivity() {
         txtSignIn = findViewById(R.id.txtSignIn)
         edtPassword = findViewById(R.id.editPassword1)
         confirmPassword = findViewById(R.id.confirmPassWordEditTxt)
+        btnSignUp = findViewById(R.id.btnSignUp)
 
         addMandatoryAsteriskTextEnd()
         passwordToggleFirst()
@@ -59,6 +65,11 @@ class SignUpActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
+        }
+
+        btnSignUp.setOnClickListener {
+            val intent = Intent(this, SetupProfileActivity::class.java)
+            startActivity(intent)
         }
     }
 

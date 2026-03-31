@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JobKo">
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".SetupProfile.SetupProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword.ResetPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"

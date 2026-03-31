@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/sign_in_bg"
-    tools:context=".ResetPassword.ResetPasswordActivity">
+    tools:context=".SetupProfile.SetupProfileActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.jobko.ResetPassword.ResetEmailPasswordFragment" />
+        android:name="com.example.jobko.SetupProfile.SetupProfileFragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
