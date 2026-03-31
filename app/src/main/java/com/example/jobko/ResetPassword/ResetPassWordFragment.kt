@@ -29,8 +29,7 @@ class ResetPassWordFragment : Fragment() {
     private var isPasswordVisible1 = false
     private var isPasswordVisible2 = false
 
-    val spannablePassword = SpannableString(textPassword)
-    val spannableCnfmPassword = SpannableString(cnfmTextPassword)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -52,6 +51,9 @@ class ResetPassWordFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val spannablePassword = SpannableString(textPassword)
+        val spannableCnfmPassword = SpannableString(cnfmTextPassword)
 
         txtPassword = view.findViewById(R.id.txtPassword)
         CnfmPassword = view.findViewById(R.id.CnfmTxtPassword)
