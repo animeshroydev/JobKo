@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.jobko.ResetPassword.ResetPasswordActivity
 
@@ -45,6 +46,8 @@ class MainActivity : AppCompatActivity() {
 
 
         passwordToggle()
+
+        WindowCompat.setDecorFitsSystemWindows(window, true) // fix(ui): ensure form scrolls above keyboard on input focus
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
