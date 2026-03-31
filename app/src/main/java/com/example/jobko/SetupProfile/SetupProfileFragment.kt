@@ -1,6 +1,7 @@
 package com.example.jobko.SetupProfile
 
 import android.app.DatePickerDialog
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,6 +19,7 @@ import java.util.Locale
 
 class SetupProfileFragment : Fragment() {
 
+    private var selectedImageUri: Uri? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -27,6 +29,11 @@ class SetupProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_setup_profile, container, false)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable("image_uri", selectedImageUri)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -71,9 +78,15 @@ class SetupProfileFragment : Fragment() {
          val imagePicker =
             registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
                 uri?.let {
+                    selectedImageUri = it
                     imgProfile.setImageURI(it)
                 }
             }
+
+        savedInstanceState?.getParcelable<Uri>("image_uri")?.let {
+            selectedImageUri = it
+            imgProfile.setImageURI(it)
+        }
 
         imgLock.setOnClickListener {
             imagePicker.launch("image/*")
