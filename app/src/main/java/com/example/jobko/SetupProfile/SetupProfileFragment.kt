@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.EditText
+import android.widget.ImageView
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.jobko.R
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -32,6 +34,8 @@ class SetupProfileFragment : Fragment() {
 
         val genderField = view.findViewById<AutoCompleteTextView>(R.id.edtGender)
         val dobField = view.findViewById<EditText>(R.id.edtDateOfBirth)
+        val imgProfile = view.findViewById<ImageView>(R.id.imgProfile)
+        val imgLock = view.findViewById<ImageView>(R.id.imgLock)
 
 
         val adapter = ArrayAdapter(
@@ -63,5 +67,16 @@ class SetupProfileFragment : Fragment() {
             datePicker.show()
         }
 
+        // img picker
+         val imagePicker =
+            registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
+                uri?.let {
+                    imgProfile.setImageURI(it)
+                }
+            }
+
+        imgLock.setOnClickListener {
+            imagePicker.launch("image/*")
+        }
     }
 }
