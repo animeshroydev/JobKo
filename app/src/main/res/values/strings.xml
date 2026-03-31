@@ -34,4 +34,11 @@
     <string name="johnthansmith_gmail_com">johnthansmith@gmail.com</string>
     <string name="we_ve_send_you_the_verification_code_on">We\'ve send you the verification code on</string>
     <string name="verification">Verification</string>
+    <string name="set_up_profile">Set Up Profile</string>
+    <string name="skip">Skip</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="full_name3">Full Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
 </resources>
