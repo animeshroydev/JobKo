@@ -31,7 +31,7 @@
             android:id="@+id/interestText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Interest"
+            android:text="@string/interest"
             android:textSize="22sp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -47,7 +47,7 @@
         android:id="@+id/textTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What type of job you are looking for?"
+        android:text="@string/what_type_of_job_you_are_looking_for"
         android:textColor="@color/white"
         android:layout_marginStart="10dp"
         android:paddingBottom="11dp"
@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lineHeight="24dp"
-        android:text="Choose your job categories and well click the job \nvacancy for you."
+        android:text="@string/choose_your_job_categories_and_well_click_the_job_nvacancy_for_you"
         android:textColor="#c2c3c4"
         android:layout_marginStart="10dp"
         android:textSize="15sp"
@@ -113,7 +113,7 @@
                             <ImageView style="@style/IconStyle"
                                 android:src="@drawable/ic_interest_one"/>
                             <TextView style="@style/TextStyle"
-                                android:text="Design"/>
+                                android:text="@string/design"/>
                             <ImageView style="@style/IconStyleFilled"
                                 android:src="@drawable/tick_filled"/>
 
@@ -127,7 +127,7 @@
                             <ImageView style="@style/IconStyle"
                                 android:src="@drawable/ic_interest_two"/>
                             <TextView style="@style/TextStyle"
-                                android:text="Develop"/>
+                                android:text="@string/develop"/>
                             <ImageView style="@style/IconStyleUnfilled"
                                 android:src="@drawable/tick_circle_unchecked"/>
 
@@ -139,7 +139,7 @@
                             <ImageView style="@style/IconStyle"
                                 android:src="@drawable/ic_interest_three"/>
                             <TextView style="@style/TextStyle"
-                                android:text="Information Tech"/>
+                                android:text="@string/information_tech"/>
                             <ImageView style="@style/IconStyleUnfilled"
                                 android:src="@drawable/tick_circle_unchecked"/>
 
@@ -151,7 +151,7 @@
                             <ImageView style="@style/IconStyle"
                                 android:src="@drawable/ic_interest_four"/>
                             <TextView style="@style/TextStyle"
-                                android:text="Research &amp; Analytics"/>
+                                android:text="@string/research_amp_analytics"/>
                             <ImageView style="@style/IconStyleFilled"
                                 android:src="@drawable/tick_filled"/>
 
@@ -163,7 +163,7 @@
                             <ImageView style="@style/IconStyle"
                                 android:src="@drawable/ic_interest_five"/>
                             <TextView style="@style/TextStyle"
-                                android:text="Marketing"/>
+                                android:text="@string/marketing"/>
                             <ImageView style="@style/IconStyleUnfilled"
                                 android:src="@drawable/tick_circle_unchecked"/>
 
@@ -178,7 +178,7 @@
                     android:id="@+id/continueBtn"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="Continue"
+                    android:text="@string/continue"
                     android:textColor="@android:color/white"
                     android:backgroundTint="@color/blue_primary"
                     app:cornerRadius="12dp"
