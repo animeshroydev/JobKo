@@ -51,4 +51,6 @@
     <string name="choose_your_job_categories_and_well_click_the_job_nvacancy_for_you">Choose your job categories and well click the job \nvacancy for you.</string>
     <string name="what_type_of_job_you_are_looking_for">What type of job you are looking for?</string>
     <string name="interest">Interest</string>
+    <string name="all_is_okay_let_s_confirm_your_account">All is okay, let\'s confirm your account.</string>
+    <string name="confirm_new_account">Confirm New Account</string>
 </resources>
