@@ -53,4 +53,7 @@
     <string name="interest">Interest</string>
     <string name="all_is_okay_let_s_confirm_your_account">All is okay, let\'s confirm your account.</string>
     <string name="confirm_new_account">Confirm New Account</string>
+    <string name="jonathan_smith">Jonathan Smith</string>
+    <string name="create_my_account">Create My Account</string>
+    <string name="welcome">Welcome</string>
 </resources>
