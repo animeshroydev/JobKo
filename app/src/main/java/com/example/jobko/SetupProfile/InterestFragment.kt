@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jobko.R
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class InterestFragment : Fragment() {
 
