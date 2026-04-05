@@ -9,10 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.jobko.R
+import com.example.jobko.ResetPassword.VerificationPinFragment
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -20,6 +23,7 @@ import java.util.Locale
 class SetupProfileFragment : Fragment() {
 
     private var selectedImageUri: Uri? = null
+    lateinit var continueBtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -43,7 +47,7 @@ class SetupProfileFragment : Fragment() {
         val dobField = view.findViewById<EditText>(R.id.edtDateOfBirth)
         val imgProfile = view.findViewById<ImageView>(R.id.imgProfile)
         val imgLock = view.findViewById<ImageView>(R.id.imgLock)
-
+        continueBtn = view.findViewById(R.id.continueBtn)
 
         val adapter = ArrayAdapter(
             requireContext(),
@@ -90,6 +94,16 @@ class SetupProfileFragment : Fragment() {
 
         imgLock.setOnClickListener {
             imagePicker.launch("image/*")
+        }
+
+        continueBtn.setOnClickListener {
+
+            val fragment = InterestFragment()
+
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, fragment)
+                .addToBackStack(null)
+                .commit()
         }
     }
 }

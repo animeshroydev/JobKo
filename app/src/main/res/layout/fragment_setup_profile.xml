@@ -79,6 +79,7 @@
                     android:id="@+id/imgProfile"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:padding="40dp"
                     android:background="@drawable/edittext_bg"
                     android:scaleType="centerCrop"
                     android:src="@drawable/avatar" />
