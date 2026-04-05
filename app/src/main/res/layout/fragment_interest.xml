@@ -84,7 +84,7 @@
             android:layout_height="400dp"
             android:layout_gravity="bottom"
             app:cardElevation="10dp"
-            android:backgroundTint="#F5F5F5"
+            android:backgroundTint="@color/background_interest"
             app:shapeAppearanceOverlay="@style/TopRoundedCard">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -178,7 +178,7 @@
                     android:id="@+id/continueBtn"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="@string/continue"
+                    android:text="@string/continue_button"
                     android:textColor="@android:color/white"
                     android:backgroundTint="@color/blue_primary"
                     app:cornerRadius="12dp"

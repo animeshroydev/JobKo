@@ -15,6 +15,7 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:background">@drawable/item_bg2</item>
+        <item name="android:backgroundTint">@color/background_interest_item</item>
         <item name="android:padding">12dp</item>
         <item name="android:layout_marginBottom">12dp</item>
     </style>
