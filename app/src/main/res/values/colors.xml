@@ -10,5 +10,6 @@
     <color name="drawable_edit_txt_tint">#808080</color>
     <color name="background_interest">#F5F5F5</color>
     <color name="background_interest_item">#ffffff</color>
+    <color name="card_background_success_fragment">#ffffff</color>
 
 </resources>

@@ -7,4 +7,5 @@
     <color name="drawable_edit_txt_tint">#808080</color>
     <color name="background_interest">#001a33</color>
     <color name="background_interest_item">#242f49</color>
+    <color name="card_background_success_fragment">#242f49</color>
 </resources>

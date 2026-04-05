@@ -56,4 +56,8 @@
     <string name="jonathan_smith">Jonathan Smith</string>
     <string name="create_my_account">Create My Account</string>
     <string name="welcome">Welcome</string>
+    <string name="success">Success</string>
+    <string name="your_account_set">Your Account Set</string>
+    <string name="you_have_successfully_created_account">You have successfully created account</string>
+    <string name="back_to_home">Back To Home</string>
 </resources>
