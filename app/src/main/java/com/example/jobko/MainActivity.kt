@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.view.MotionEvent
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.jobko.HomeAndJobDetails.HomeActivity
+import com.example.jobko.HomeAndJobDetails.HomeFragment
 import com.example.jobko.ResetPassword.ResetPasswordActivity
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var txtSignUp: TextView
     private var isPasswordVisible = false
     lateinit var forgotPassWord: TextView
+    lateinit var btnSignIn: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         forgotPassWord = findViewById(R.id.forgotPassword)
 
+        btnSignIn = findViewById(R.id.btnSignIn)
+
         txtSignUp = findViewById(R.id.txtResend)
         txtSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
@@ -40,6 +46,11 @@ class MainActivity : AppCompatActivity() {
 
         forgotPassWord.setOnClickListener {
             val intent = Intent(this, ResetPasswordActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnSignIn.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
