@@ -1,17 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/sign_in_bg"
     android:layout_height="match_parent"
-    tools:context=".HomeAndJobDetails.HomeFragment">
+    tools:context=".ResetPassword.ResetEmailPasswordFragment">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customTopAppBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="That's a Home Fragment"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="90dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile_sample"
+            android:scaleType="centerCrop"
+            android:background="@drawable/item_bg_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            app:layout_constraintStart_toEndOf="@id/imgProfile"
+            android:layout_marginStart="12dp"
+            app:layout_constraintTop_toTopOf="@id/imgProfile"/>
+
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_smith"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/txtWelcome"
+            app:layout_constraintTop_toBottomOf="@id/txtWelcome"/>
+
+
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_bell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgProfile"
+            app:layout_constraintBottom_toBottomOf="@id/imgProfile"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
