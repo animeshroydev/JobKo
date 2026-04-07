@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/sign_in_bg"
+    android:background="@color/home_bg"
     tools:context=".HomeAndJobDetails.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,6 +90,8 @@
             android:layout_height="90dp"
             android:background="@drawable/bottom_nav_bg2"
             android:clipChildren="false"
+            app:itemIconTint="@drawable/bottom_nav_colors"
+            app:itemTextColor="@drawable/bottom_nav_colors"
             app:itemActiveIndicatorStyle="@null"
             app:itemPaddingTop="33dp"
             app:labelVisibilityMode="labeled"

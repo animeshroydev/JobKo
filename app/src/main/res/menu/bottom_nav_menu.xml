@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_phone_call_avatar"
+        android:icon="@drawable/home"
         android:title="" />
 
     <item
         android:id="@+id/searchFragment"
-        android:icon="@drawable/ic_gender_avatar"
+        android:icon="@drawable/clipboard_notes"
         android:title="" />
 
     <item
         android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_phone_call_avatar"
+        android:icon="@drawable/message"
         android:title="" />
 
     <item
         android:id="@+id/msgFragment"
-        android:icon="@drawable/ic_phone_call_avatar"
+        android:icon="@drawable/profile"
         android:title="" />
 
 </menu>
