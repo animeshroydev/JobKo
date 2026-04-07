@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_filter_resized"
+        android:icon="@drawable/ic_phone_call_avatar"
         android:title="Home" />
 
     <item
@@ -13,7 +13,12 @@
 
     <item
         android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_full_name_avatar"
+        android:icon="@drawable/ic_phone_call_avatar"
         android:title="Profile" />
+
+    <item
+        android:id="@+id/msgFragment"
+        android:icon="@drawable/ic_phone_call_avatar"
+        android:title="Message" />
 
 </menu>
