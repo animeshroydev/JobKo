@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@color/sign_in_bg"
     android:layout_height="match_parent"
-    tools:context=".ResetPassword.ResetEmailPasswordFragment">
+    tools:context=".HomeAndJobDetails.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/customTopAppBar"
@@ -78,5 +78,15 @@
         android:background="@drawable/edittext_bg"
         android:inputType="text"
         />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
