@@ -13,4 +13,10 @@
     <color name="background_interest_item">#ffffff</color>
     <color name="card_background_success_fragment">#ffffff</color>
 
+
+    <color name="bottom_nav_bg">#ffffff</color>
+    <color name="selected_item_bg_nav">#2969fb</color>
+    <color name="not_selected_item_bg_nav">#000000</color>
+
+    <color name="black_white">#000000</color>
 </resources>
