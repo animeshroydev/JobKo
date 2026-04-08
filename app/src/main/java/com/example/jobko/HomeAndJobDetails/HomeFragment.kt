@@ -35,7 +35,13 @@ class HomeFragment : Fragment() {
 
 
         val jobList = listOf(
-            JobModel("Google LLC", "Sr. UX Designer", "$195,000/ Year", R.drawable.google2, "#7C5CF0"),
+            JobModel(
+                "Google LLC",
+                "Sr. UX Designer",
+                "$195,000/ Year",
+                R.drawable.google2,
+                "#7C5CF0"
+            ),
             JobModel("Meta", "Product Designer", "$180,000/ Year", R.drawable.meta, "#4267B2"),
             JobModel("Microsoft", "UI Designer", "$160,000/ Year", R.drawable.microsoft, "#FF9900")
         )
@@ -48,6 +54,49 @@ class HomeFragment : Fragment() {
 
         val adapter = SuggestedJobsAdapter(jobList)
         rvSuggestedJobs.adapter = adapter
+
+
+        val rvRecentJobs = view.findViewById<RecyclerView>(R.id.recentJobs)
+
+
+        val recentJobList = listOf(
+            RecentJobModel(
+                "Apple, Inc.",
+                "Sr. Product Designer",
+                "United States",
+                R.drawable.apple2
+            ),
+            RecentJobModel(
+                "Apple, Inc.",
+                "Sr. UI/UX Designer",
+                "Singapore",
+                R.drawable.amplitude
+            ),
+            RecentJobModel(
+                "Adobe",
+                "Software Developer",
+                "New York City",
+                R.drawable.adobe
+            ),
+            RecentJobModel(
+                "Wings",
+                "Lead Digital Marketer",
+                "Anywhere (Remote)",
+                R.drawable.wings
+            ),
+            RecentJobModel(
+                "Airbnb",
+                "Full Stack Developer",
+                "United Kingdom",
+                R.drawable.airbnb
+            )
+        )
+
+        rvRecentJobs.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        val adapter2 = RecentJobsAdapter(recentJobList)
+        rvRecentJobs.adapter = adapter2
+
     }
 
 }
