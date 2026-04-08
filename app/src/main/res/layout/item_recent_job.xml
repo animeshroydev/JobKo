@@ -7,7 +7,7 @@
     android:layout_margin="12dp"
     app:cardCornerRadius="20dp"
     app:cardElevation="6dp"
-    android:backgroundTint="#F2F2F2">
+    android:backgroundTint="@color/recent_job_color_card">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 android:text="Sr. Product Designer"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#000"/>
+                android:textColor="@color/black_white"/>
 
             <!-- Subtitle Row -->
             <LinearLayout
@@ -61,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Apple"
-                    android:textColor="#555"
+                    android:textColor="@color/company_country_recent"
                     android:textSize="11sp"/>
 
                 <TextView
@@ -82,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/united_states"
-                    android:textColor="#777"
+                    android:textColor="@color/company_country_recent"
                     android:textSize="11sp"/>
 
             </LinearLayout>

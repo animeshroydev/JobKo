@@ -16,6 +16,7 @@
 
 
     <color name="black_white">#ffffff</color>
-
+    <color name="recent_job_color_card">#242f49</color>
+    <color name="company_country_recent">#fff</color>
 
 </resources>

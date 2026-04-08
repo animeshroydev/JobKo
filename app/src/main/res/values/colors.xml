@@ -19,4 +19,6 @@
     <color name="not_selected_item_bg_nav">#000000</color>
 
     <color name="black_white">#000000</color>
+    <color name="recent_job_color_card">#F2F2F2</color>
+    <color name="company_country_recent">#555</color>
 </resources>
