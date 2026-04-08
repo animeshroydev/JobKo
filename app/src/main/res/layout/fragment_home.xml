@@ -70,7 +70,7 @@
         android:drawableStart="@drawable/ic_search_glass_resized"
         android:drawableEnd="@drawable/ic_filter_resized"
         android:drawablePadding="10dp"
-        android:hint="Search..."
+        android:hint="@string/search"
         android:inputType="text"
         android:padding="12dp"
         app:layout_constraintTop_toBottomOf="@+id/customTopAppBar" />
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:clipToPadding="false"
-        android:contentDescription="scroll View"
+        android:contentDescription="@string/scroll_view"
         android:paddingBottom="120dp"
         app:layout_constraintTop_toBottomOf="@+id/searchBar"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -133,7 +133,7 @@
                         android:layout_width="130dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="18dp"
-                        android:text="Learn More"
+                        android:text="@string/learn_more"
                         android:layout_marginBottom="13dp"
                         android:textAllCaps="false"
                         android:lines="1"
@@ -164,7 +164,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:text="Browse By Category"
+                android:text="@string/browse_by_category"
                 android:layout_marginStart="20dp"
                 android:layout_width="match_parent"
                 android:textSize="20sp"
@@ -229,7 +229,7 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Company"
+                    android:text="@string/company"
                     android:layout_marginTop="5dp"
                     app:layout_constraintTop_toBottomOf="@+id/imageView6"
                     app:layout_constraintStart_toStartOf="@+id/imageView6"
@@ -240,7 +240,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fulltime"
+                    android:text="@string/fulltime"
                     android:layout_marginTop="5dp"
                     app:layout_constraintTop_toBottomOf="@+id/imageView3"
                     app:layout_constraintStart_toStartOf="@+id/imageView3"
@@ -251,7 +251,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Part Time"
+                    android:text="@string/part_time"
                     android:layout_marginTop="5dp"
                     app:layout_constraintTop_toBottomOf="@+id/imageView2"
                     app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -281,7 +281,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="20dp"
-                    android:text="Suggested Jobs"
+                    android:text="@string/suggested_jobs"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black_white" />
@@ -289,13 +289,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="See All"
+                    android:text="@string/see_all"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:textColor="#2969fb" />
 
             </LinearLayout>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSuggestedJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_horizontal_home" />
 
 
         </LinearLayout>
@@ -337,7 +348,7 @@
             android:src="@drawable/add_24"
             android:translationY="2dp"
             app:backgroundTint="#2969fb"
-            android:contentDescription="add item"
+            android:contentDescription="@string/add_item"
             app:fabCustomSize="68dp"
             app:layout_constraintBottom_toTopOf="@id/bottomNav"
             app:layout_constraintEnd_toEndOf="@id/bottomNav"

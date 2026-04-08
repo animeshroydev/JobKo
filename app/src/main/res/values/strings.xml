@@ -62,4 +62,21 @@
     <string name="back_to_home">Back To Home</string>
     <string name="hello_smith">Hello! Smith 👋</string>
     <string name="welcome_back">Welcome back!</string>
+    <string name="add_item">add item</string>
+    <string name="suggested_jobs">Suggested Jobs</string>
+    <string name="see_all">See All</string>
+    <string name="part_time">Part Time</string>
+    <string name="fulltime">Fulltime</string>
+    <string name="company">Company</string>
+    <string name="browse_by_category">Browse By Category</string>
+    <string name="learn_more">Learn More</string>
+    <string name="scroll_view">scroll View</string>
+    <string name="search">Search...</string>
+    <string name="google_llc">Google LLC</string>
+    <string name="sr_ux_designer">Sr. UX Designer</string>
+    <string name="design2">Design</string>
+    <string name="full_time2">Full Time</string>
+    <string name="in_house">In House</string>
+    <string name="_195_000_year">$195,000/ Year</string>
+    <string name="apply"><![CDATA[Apply ->]]></string>
 </resources>
