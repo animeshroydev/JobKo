@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#F8FAFC"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgUserReview"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_sample"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImage" />
+
+        <TextView
+            android:id="@+id/txtReviewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Atif Aslam"
+            android:textColor="#1A1D1E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imgUserReview"
+            app:layout_constraintTop_toTopOf="@id/imgUserReview" />
+
+        <TextView
+            android:id="@+id/txtReviewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="• 10 min ago"
+            android:textColor="#94A3B8"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtReviewUserName"
+            app:layout_constraintStart_toEndOf="@id/txtReviewUserName"
+            app:layout_constraintTop_toTopOf="@id/txtReviewUserName" />
+
+        <LinearLayout
+            android:id="@+id/reviewStarsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/txtReviewUserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtReviewUserName">
+
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/star_full" app:tint="#FFB800" />
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="2dp" android:src="@drawable/star_full" app:tint="#FFB800" />
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="2dp" android:src="@drawable/star_full" app:tint="#FFB800" />
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="2dp" android:src="@drawable/star_full" app:tint="#FFB800" />
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="2dp" android:src="@drawable/star_full" app:tint="#FFB800" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtReviewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4sp"
+            android:text="&quot;Google is a fantastic multinational company. It focusing on search engine technology, web application software, quantum computing. I love this company&quot;"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtReviewUserName"
+            app:layout_constraintTop_toBottomOf="@id/txtReviewUserName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

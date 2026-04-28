@@ -9,12 +9,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jobko.R
 
-class SuggestedJobsAdapter(private val jobList: List<JobModel>) :
+class SuggestedJobsAdapter(private val jobList: List<JobModel>,
+                           private val onItemClick: (JobModel) -> Unit) :
     RecyclerView.Adapter<SuggestedJobsAdapter.JobViewHolder>() {
 
     class JobViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        // Add this line to reference the root card change the background color of material card
         val rootCard: com.google.android.material.card.MaterialCardView = view as com.google.android.material.card.MaterialCardView
 
         val companyName: TextView = view.findViewById(R.id.txtCompanyName)
@@ -39,6 +39,10 @@ class SuggestedJobsAdapter(private val jobList: List<JobModel>) :
         holder.jobTitle.text = job.jobTitle
         holder.salary.text = job.salary
         holder.logo.setImageResource(job.companyLogo)
+
+        holder.itemView.setOnClickListener {
+            onItemClick(job)
+        }
     }
 
     override fun getItemCount(): Int = jobList.size

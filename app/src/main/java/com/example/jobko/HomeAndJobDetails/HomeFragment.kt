@@ -1,10 +1,12 @@
 package com.example.jobko.HomeAndJobDetails
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
@@ -52,7 +54,20 @@ class HomeFragment : Fragment() {
                 LinearLayoutManager.HORIZONTAL, false
             )
 
-        val adapter = SuggestedJobsAdapter(jobList)
+        val adapter = SuggestedJobsAdapter(jobList) { clickedJob ->
+
+//            Toast.makeText(
+//                requireContext(),
+//                "Clicked: ${clickedJob.jobTitle} at ${clickedJob.companyName}",
+//                Toast.LENGTH_SHORT
+//            ).show()
+
+             // can navigate here:
+             val intent = Intent(requireContext(), JobDetailActivity::class.java)
+
+            intent.putExtra("JOB_TITLE", clickedJob.jobTitle)
+            startActivity(intent)
+        }
         rvSuggestedJobs.adapter = adapter
 
 

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JobKo">
         <activity
+            android:name=".HomeAndJobDetails.JobDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeAndJobDetails.HomeActivity"
             android:exported="false" />
         <activity
