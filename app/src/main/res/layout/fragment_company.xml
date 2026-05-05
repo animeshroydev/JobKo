@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="About this Company"
-            android:textColor="@color/black"
+            android:textColor="@color/black_white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,8 +47,10 @@
                 <ImageView
                     android:src="@drawable/website"
                     app:tint="#4466EE"
+                    android:textColor="@color/black_white"
                     style="@style/CompanyInfoIconStyle" />
                 <TextView
+                    android:textColor="@color/black_white"
                     android:text="Website"
                     style="@style/CompanyInfoLabelStyle" />
                 <TextView
@@ -63,6 +65,7 @@
                     style="@style/CompanyInfoIconStyle" />
                 <TextView
                     android:text="Headquarters"
+                    android:textColor="@color/black_white"
                     style="@style/CompanyInfoLabelStyle" />
                 <TextView
                     android:text="California, USA"
@@ -76,6 +79,7 @@
                     style="@style/CompanyInfoIconStyle" />
                 <TextView
                     android:text="Founded"
+                    android:textColor="@color/black_white"
                     style="@style/CompanyInfoLabelStyle" />
                 <TextView
                     android:text="September 4, 1998"
@@ -89,6 +93,7 @@
                     style="@style/CompanyInfoIconStyle" />
                 <TextView
                     android:text="Size"
+                    android:textColor="@color/black_white"
                     style="@style/CompanyInfoLabelStyle" />
                 <TextView
                     android:text="100,000 Employee"
@@ -101,6 +106,7 @@
                     app:tint="#6644EE"
                     style="@style/CompanyInfoIconStyle" />
                 <TextView
+                    android:textColor="@color/black_white"
                     android:text="Revenue"
                     style="@style/CompanyInfoLabelStyle" />
                 <TextView

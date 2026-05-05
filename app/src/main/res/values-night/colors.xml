@@ -9,6 +9,7 @@
     <color name="background_interest">#001a33</color>
     <color name="background_interest_item">#242f49</color>
     <color name="card_background_success_fragment">#242f49</color>
+    <color name="card_background_success_fragment2">#242f49</color>
 
     <color name="bottom_nav_bg">#2969fb</color>
     <color name="selected_item_bg_nav">#ffffff</color>
@@ -16,7 +17,12 @@
 
 
     <color name="black_white">#ffffff</color>
+    <color name="white_black">#000</color>
+    <color name="selected_tab_color_nav">#fff</color>
     <color name="recent_job_color_card">#242f49</color>
     <color name="company_country_recent">#fff</color>
 
+    <color name="tab_bg">#414a61</color>
+
+    <color name="rv_bg">#242f49</color>
 </resources>
