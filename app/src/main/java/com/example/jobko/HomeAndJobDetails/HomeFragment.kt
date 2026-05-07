@@ -4,14 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.Toast
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jobko.FilterAndSearch.FilterAndSearchActivity
 import com.example.jobko.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -34,6 +37,31 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val rvSuggestedJobs = view.findViewById<RecyclerView>(R.id.rvSuggestedJobs)
+
+        val searchBar = view.findViewById<EditText>(R.id.searchBar)
+
+        searchBar.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_UP) {
+                // Index 2 represents the drawableEnd (Right)
+                val drawableEnd = searchBar.compoundDrawables[2]
+
+                if (drawableEnd != null) {
+                    // Check if the touch is within the area of the drawableEnd
+                    // Calculation: Total Width - Padding - Drawable Width
+                    if (event.rawX >= (searchBar.right - drawableEnd.bounds.width() - searchBar.paddingEnd)) {
+
+                        // ACTION HERE
+                        // Toast.makeText(requireContext(), "Filter Clicked!", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(requireContext(), FilterAndSearchActivity::class.java)
+                        startActivity(intent)
+
+
+                        return@setOnTouchListener true
+                    }
+                }
+            }
+            false
+        }
 
 
         val jobList = listOf(

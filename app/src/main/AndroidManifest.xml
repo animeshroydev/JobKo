@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JobKo">
         <activity
+            android:name=".FilterAndSearch.FilterAndSearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeAndJobDetails.ApplyJobActivity"
             android:exported="false" />
         <activity
