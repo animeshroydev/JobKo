@@ -50,7 +50,7 @@ class FilterAndSearchFragment : Fragment() {
             val values = slider.values
             val min = values[0].toInt()
             val max = values[1].toInt()
-            txtSalaryRange.text = "${min}K - ${max}K"
+            txtSalaryRange.text = "$${min}K - $${max}K"
         }
     }
 }
